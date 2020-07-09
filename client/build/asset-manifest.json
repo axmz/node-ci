@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.js": "/static/js/main.89b3524e.chunk.js",
+    "main.js.map": "/static/js/main.89b3524e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.09b85ec0.js",
+    "runtime-main.js.map": "/static/js/runtime-main.09b85ec0.js.map",
+    "static/css/2.4b0f7316.chunk.css": "/static/css/2.4b0f7316.chunk.css",
+    "static/js/2.2669ed05.chunk.js": "/static/js/2.2669ed05.chunk.js",
+    "static/js/2.2669ed05.chunk.js.map": "/static/js/2.2669ed05.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.d1acf5b00efc33b954b18d1ffdf47183.js": "/precache-manifest.d1acf5b00efc33b954b18d1ffdf47183.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.4b0f7316.chunk.css.map": "/static/css/2.4b0f7316.chunk.css.map",
+    "static/js/2.2669ed05.chunk.js.LICENSE.txt": "/static/js/2.2669ed05.chunk.js.LICENSE.txt",
+    "static/media/materialize.min.css": "/static/media/Roboto-Thin.44b78f14.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.09b85ec0.js",
+    "static/css/2.4b0f7316.chunk.css",
+    "static/js/2.2669ed05.chunk.js",
+    "static/js/main.89b3524e.chunk.js"
+  ]
+}
