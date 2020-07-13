@@ -5,7 +5,7 @@ services:
     ports:
       - "5000:5000"
     networks:
-      - node-ci-network
+      - net
     environment:
       REDIS_HOST: redis
     depends_on:
@@ -13,8 +13,8 @@ services:
   redis:
     image: bitnami/redis
     networks: 
-      - node-ci-network
+      - net
     environment:
       ALLOW_EMPTY_PASSWORD: "yes"
 networks:
-  node-ci-network:
+  net:
