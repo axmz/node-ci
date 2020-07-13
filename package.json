@@ -13,7 +13,7 @@
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "build": "npm install --prefix client && npm run build --prefix client",
     "heroku-postbuild": "npm run build",
-    "test": "jest"
+    "test": "jest --env=node"
   },
   "author": "",
   "license": "ISC",
@@ -30,7 +30,7 @@
     "passport": "^0.3.2",
     "passport-google-oauth20": "^2.0.0",
     "path-parser": "^2.0.2",
-    "puppeteer": "^1.0.0",
+    "puppeteer": "^1.20.0",
     "redis": "^2.8.0",
     "uuid": "^3.2.1"
   }
