@@ -1,15 +1,13 @@
 version: "3"
 services:
-  entry:
-    image: nginx:stable-alpine
+  proxy:
+    image: axmz/cms-proxy
     networks:
       - net
     ports:
       - "80:80"
     depends_on:
       - client
-    volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf
   redis:
     image: bitnami/redis
     networks: 
@@ -17,17 +15,22 @@ services:
     environment:
       ALLOW_EMPTY_PASSWORD: "yes"
   server:
-    build: .
-    ports:
-      - "5000:5000"
+    image: axmz/cms-server
+    # ports:
+      # - "5000:5000"
     networks:
       - net
     environment:
+      NODE_ENV: production
       REDIS_HOST: redis://redis:6379
+      GOOGLE_CLIENT_ID: 1058003007205-bjtgjq5p1ascvs44hq679gl0ununr08v.apps.googleusercontent.com
+      GOOGLE_CLIENT_SECRET: LFyMfdvLXf6XOXr_kS78EMG3
+      MONGO_URI: mongodb+srv://axmz:%23TcFvsz@TH7V@ve@cluster0.tfmeq.mongodb.net/nodeci?retryWrites=true&w=majority
+      COOKIE_KEY: 123123123 
     depends_on:
       - redis
   client:
-    build: "./client"
+    image: axmz/cms-client
     networks:
       - net
     depends_on:

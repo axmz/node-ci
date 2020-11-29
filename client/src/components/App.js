@@ -25,6 +25,8 @@ class App extends Component {
               <Route exact path="/blogs/:_id" component={BlogShow} />
               <Route path="/blogs" component={Dashboard} />
               <Route path="/" component={Landing} />
+              <Route path="*" component={<div>404</div>} />
+
             </Switch>
           </div>
         </BrowserRouter>
